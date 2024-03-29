@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<title>웹개발 스케치북</title>
+<meta charset="=utf-8">
+<style>
+    .세로로세우기 {
+        width: 100%;
+        height: 100px;
+        background: #0486;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        line-height: 100px;
+    }
+    .shadow1 {
+        color: red;
+        text-shadow: lpx lpx black; /* 가로, 세로 거리, 색상지정*/
+    }
+    .shadow2 {
+        color: #000;
+        text-shadow: 5px 5px 3px #ffa500; /* 가로, 세로 거리, 색상지정*/
+    }
+    .shadow3 {
+        color: #fff; 
+        text-shadow: 7px -7px 20px #000; /* 가로, 세로 거리, 번짐 정도, 색상지정*/
+    }
+    .까만배경 {background-color: rgb(0, 0, 0);}
+    .trans1{ text-transform: capitalize}
+    .trans2{ text-transform: uppercase}
+    .trans3{ text-transform: lowercase}
+    .bookl {list-style-type: none; /* 순서 없는 목록 */
+    }
+    .book2 {list-style-type: upper-alpha /* 알파벳 대문자 목록 */
+    }
+    .imagelist {
+        list-style-image:url(images/dot.png);
+    }
+    table {
+        caption-side: top; /*표 캡션 위치 아래로*/
+        border:10px solid red;  /*표 테두리 색깔 적용*/
+    }
+    td, th{
+        border: #ffa500;  /*셀 테두리 색 적용*/
+        padding: 10px;      /*셀 테두리 여백을 얼마나 쓸거냐*/
+        text-align: center; /*셀 적용 방법*/
+    }
+
+    /*셀 사이 여백을 지정할거라면 border-spacing: */
+    /*표와 셀 테두리를 합칠거라면 border-collapse*/
+</style>
+</head>
+
+<body>
+<h1><a href="연습 코드.html">웹개발 초급 스터디</a></h1>
+<ol>
+    <li><a href="html.html" target="_blank">Html</a></li>
+    <li><a href="css.html" target="_blank">CSS</a></li>
+    <li><a href="자바스크립트 적용문.html" target="_blank">JavaScript</a></li>
+</ol>
+css 적용 페이지입니다.
+
+<h2 class="세로로세우기">HUFS</h2>
+<p style="text-decoration: none;">사자와 호랑이가 싸운다면 승부를 장담할 수 없습니다.</p>
+<p style="text-decoration: underline;">하지만 가위 바위 보를 한다면? 승패가 확연하게 갈리게 됩니다.</p>
+<p style="text-decoration: overline;"> 이건 윗줄입니다.</p>
+<p>그림자 주는 코드 내용입니다.</p>
+
+<code class="shadow1">.shadow1 {<br>
+    color: red;<br>
+    text-shadow: lpx lpx black; /* 가로, 세로 거리, 색상지정*/<br>
+}<br><br>
+<code class="shadow2">.shadow2 {<br>
+    text-shadow: 5px 5px 3px #ffa500; /* 가로, 세로 거리, 번짐 정도, 색상 지정 */<br>
+    }
+</code>
+<br><br>
+<code class="shadow3">
+    .shadow3 {<br>
+    color: #fff;<br>
+    text-shadow: 7px -7px 20px #000; /* 가로, 세로 거리, 번짐 정도, 색상지정*/<br>
+    }<br>
+</code>
+<h2 style="color: #000;">------------------------------Text-transform 속성----------------------------------------
+<code>
+<p class="trans1">.trans1{ text-transform: capitalize} /*첫번째 글자를 대문자로*/</p>
+<p class="trans2">.trans2{ text-transform: uppercase}/* 전체 글자를 대문자로*/</p>
+<p class="trans3">.trans3{ text-transform: lowercase}/* 전체 글자를 소문자로*/</p>
+</code>
+<h2 style="color: #000;">-----------------------------목록 스타일--------------------------------------
+    <p>.bookl {
+        list-style-type: none; /* 순서 없는 목록 */
+    }
+    </p>
+    <p>.book2 {
+        list-style-type: upper-alpha /* 알파벳 대문자 목록 */
+    }
+    </p>
+<ul class="book1">
+    <li>hufs1</li>
+    <li>hufs2</li>
+</ul>
+<ol class="book2">
+    <li>hufs3</li>
+    <li>hufs4</li>
+</ol>
+<ol class="imagelist">
+    <li>list-style-image: urI（’images/dot.png'）;</li>
+    <li>hufs6</li>
+</ol>
+<table class="table1">
+    <caption>미역 무게당식사량</caption>
+    <thead>
+      <tr>
+       <th>무게</th>
+       <th>식사량</th>
+      </tr>
+    </thead>
+      <tr>
+        <td>2.5g</td>
+        <td>1인분</td>
+      </tr>
+    <tbody>
+      <tr> 
+        <td>5g</td>
+        <td>2인분</td>
+      </tr>
+      <tr>
+        <td>30g</td>
+        <td>4인분</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
